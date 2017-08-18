@@ -8,7 +8,7 @@ public class Rectangle {
     private float _width = 1.0f;
 
     public Rectangle(){}
-    public void Rectangle(float length, float width){
+    public Rectangle(float length, float width){
         _length = length;
         _width = width;
     }
@@ -29,7 +29,7 @@ public class Rectangle {
         return _length*_width;
     }
     public String toString(){
-        return "Rectangle[length=" + _length+",width="+_width;
+        return "Rectangle[length=" + _length+",width="+_width+"]";
     }
 
 }
