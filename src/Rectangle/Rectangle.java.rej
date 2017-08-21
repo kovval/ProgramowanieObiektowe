@@ -1,0 +1,10 @@
+diff a/src/Rectangle/Rectangle.java b/src/Rectangle/Rectangle.java	(rejected hunks)
+@@ -8,7 +8,7 @@
+     private float _width = 1.0f;
+ 
+     public Rectangle(){}
+-    public void Rectangle(float length, float width){
++    public Rectangle(float length, float width){
+         _length = length;
+         _width = width;
+     }
