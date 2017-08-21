@@ -21,5 +21,15 @@ public class AuthorTest {
         Assert.assertEquals("AdamPudzianowski@gmail.com", author.getEmail());
 
     }
+    @Test
+    public void toStringtestForauthorwithoutsetemail(){
+        Assert.assertEquals("Author[name = Sasha Grey email= sasha.grey@mail.com, gender= f]", author.toString());
+    }
+    @Test
+    public void toStringtestWithsetEmailkovval() {
+        author.setEmail("kovval");
+        Assert.assertEquals("Author[name = Sasha Grey email= kovval, gender= f]", author.toString());
+    }
+    }
 
-}
+

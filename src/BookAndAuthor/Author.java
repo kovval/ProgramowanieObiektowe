@@ -26,14 +26,12 @@ public class Author {
 
     public  Author(String name, String email, Character gender){
         _name = name;
-
         _email = email;
         _gender = gender;
-
     }
 
     public String toString(){
-        return "Author[name = "+ _name+" email= "+ ", gender= "+"]";
+        return "Author[name = "+ _name+" email= "+_email +", gender= "+_gender+"]";
 
     }
 
