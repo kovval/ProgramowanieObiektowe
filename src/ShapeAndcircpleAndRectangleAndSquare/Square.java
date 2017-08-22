@@ -25,4 +25,22 @@ public class Square extends  Ractangle {
         super.setWidth(side);
         super.setLength(side);
     }
+    @Override
+    public void setLength(double side) {
+        super.setWidth(side);
+        super.setLength(side);
+    }
+
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("A sqrwith width= ")
+                .append(getSide())
+                .append(" and length= ")
+                .append(getSide())
+                .append(" wich is a subclass of ")
+                .append(super.toString());
+
+        return sb.toString();
+    }
+
 }
