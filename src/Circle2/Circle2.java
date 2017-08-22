@@ -7,9 +7,14 @@ import java.awt.geom.Area;
  */
 public class Circle2 {
     private double _radius = 1.0;
+    private String _color = "red";
     public Circle2(){}
-    public Circle2(double r){
-        _radius = r;
+    public Circle2(double radius){
+        _radius = radius;
+    }
+    public Circle2(double radius, String color){
+        _radius = radius;
+        _color = color;
     }
     public double getRadius(){
         return _radius;
