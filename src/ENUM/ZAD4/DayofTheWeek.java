@@ -15,12 +15,12 @@ public class DayofTheWeek {
 
     enum DayofWeek{
         Mondey("Poniedzialek", "Montag") {DayofWeek next(){return Thrusday;}},
-        Twusdey("Wtorek", "Dienstang"){ DayofWeek next(){return Wendesday;}},
-        Wendesday("Sroda", "Mittwoch"){ DayofWeek next(){return Thrusday;}},
-        Thrusday("Czwartek", "Donnerstag"){  DayofWeek next(){return Friday;}},
-        Friday("Piatek", "Freitag"){  DayofWeek next(){return Saturday;}},
-        Saturday("Sobota", "Samstag"){  DayofWeek next(){return Sunday;}},
-        Sunday("Niedziela", "Sonntag"){  DayofWeek next(){return Mondey;}};
+        Twusdey("Wtorek", "Dienstang"){DayofWeek next(){return Wendesday;}},
+        Wendesday("Sroda", "Mittwoch"){DayofWeek next(){return Thrusday;}},
+        Thrusday("Czwartek", "Donnerstag"){DayofWeek next(){return Friday;}},
+        Friday("Piatek", "Freitag"){DayofWeek next(){return Saturday;}},
+        Saturday("Sobota", "Samstag"){DayofWeek next(){return Sunday;}},
+        Sunday("Niedziela", "Sonntag"){DayofWeek next(){return Mondey;}};
 
         abstract DayofWeek next();
         private final String polskienazwy, niemieckie;
