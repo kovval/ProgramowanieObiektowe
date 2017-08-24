@@ -43,6 +43,12 @@ public class MusicCD implements IProduct {
         _perfmer = performer;
     }
 
+    public void setAll(String name,String title,String performer,int price){
+        setTitle(title);
+        setProductName(name);
+        setPerformer(performer);
+        setPrice(price);
+    }
 
 
 }

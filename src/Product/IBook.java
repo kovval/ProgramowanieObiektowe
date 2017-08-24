@@ -41,5 +41,11 @@ public abstract class IBook implements IProduct  {
         _author = author;
     }
 
+    public void setAll(String name,String title,String author,int price){
+        setTitle(title);
+        setProductName(name);
+        setauthor(author);
+        setPrice(price);
+    }
 
 }

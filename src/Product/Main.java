@@ -9,6 +9,8 @@ public class Main {
         chainieseDemocracy._perfmer = "plyta";
         chainieseDemocracy.setPerformer("kurde");
 
+        chainieseDemocracy.setAll("ChainieseDemocracy","GunsAndRoses","SteaveJobs",15);
+
 
 
     }
