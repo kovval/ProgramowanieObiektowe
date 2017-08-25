@@ -8,13 +8,13 @@ package ENUM.ZAD4;
 public class DayofTheWeek {
     public static void main(String[] args) {
         for(DayofTheWeek.DayofWeek dzienTygodnia : DayofTheWeek.DayofWeek.values()){
-            System.out.printf("%s - %s - %s - %s\n", dzienTygodnia.polskienazwy, dzienTygodnia, dzienTygodnia.niemieckie, dzienTygodnia.next());
+            System.out.printf("%s - %s - %s - %s\n", dzienTygodnia.polskienazwy, dzienTygodnia, dzienTygodnia.niemieckie, dzienTygodnia.niemieckie.codePointAt(1));
         }
 
     }
 
     enum DayofWeek{
-        Mondey("Poniedzialek", "Montag") {DayofWeek next(){return Thrusday;}},
+        Mondey("Poniedzialek", "Montag") {public DayofWeek next(){return Thrusday;}},
         Twusdey("Wtorek", "Dienstang"){DayofWeek next(){return Wendesday;}},
         Wendesday("Sroda", "Mittwoch"){DayofWeek next(){return Thrusday;}},
         Thrusday("Czwartek", "Donnerstag"){DayofWeek next(){return Friday;}},
