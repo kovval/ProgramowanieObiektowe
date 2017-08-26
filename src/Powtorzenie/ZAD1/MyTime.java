@@ -15,9 +15,9 @@ public class MyTime {
     }
 
     public MyTime(int hour,  int minut, int second) {
-        if (hour < 0 || hour > 23 || minut < 0 || minut > 59 || second < 0 || second > 59){
-            throw new IllegalArgumentException("błędne dane");
-        }
+//        if (hour < 0 || hour > 23 || minut < 0 || minut > 59 || second < 0 || second > 59){
+//            throw new IllegalArgumentException("Zle dane");
+//        }
         setHour(hour);
         setMinut(minut);
         setSecond(second);
@@ -25,7 +25,7 @@ public class MyTime {
 
     public void setTime(int hour,  int minut, int second) {
         if (hour < 0 || hour > 23 || minut < 0 || minut > 59 || second < 0 || second > 59){
-            throw new IllegalArgumentException("błędne dane");
+            throw new IllegalArgumentException("Zle dane");
         }
         setHour(hour);
         setMinut(minut);
@@ -38,7 +38,7 @@ public class MyTime {
 
     public void setHour(int hour) {
         if (hour < 0 || hour > 23) {
-            throw new IllegalArgumentException("bledna godzina");
+            throw new IllegalArgumentException("zla godzina");
         }
         _hour = hour;
     }
@@ -50,7 +50,7 @@ public class MyTime {
     public void setMinut(int minut) {
 
             if (minut < 0 || minut > 59) {
-                throw new IllegalArgumentException("bledna sekunda");
+                throw new IllegalArgumentException("bledna minuta");
             }
         _minut = minut;
     }
