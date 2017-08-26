@@ -71,7 +71,7 @@ public class MyTimeTest {
         exception.expect(IllegalArgumentException.class);
         MyTime czas = new MyTime(60, 9, 9);
 
-      
+
     }
 
 
