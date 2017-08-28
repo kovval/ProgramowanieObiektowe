@@ -52,6 +52,11 @@ public class Circle2Test {
         Circle2 circle = new Circle2(2.0);
         Assert.assertEquals("Circle[radius= 2.0]", circle.toString());
     }
+    @Test
+    public void getColorCircle(){
+        Circle2 circle = new Circle2(2.0, "blue");
+        Assert.assertEquals("blue", circle.getColor());
+    }
 
 
 }

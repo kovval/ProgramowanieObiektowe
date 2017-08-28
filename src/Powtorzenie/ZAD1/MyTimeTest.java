@@ -73,6 +73,26 @@ public class MyTimeTest {
 
 
     }
+    @Test(expected = Exception.class)
+    public void testExceptionforHour() {
+        MyTime czas = new MyTime();
+        czas.setTime(60, 0, 0);
+
+    }
+
+    @Test(expected = Exception.class)
+    public void testExceptionformin() {
+        MyTime czas = new MyTime();
+        czas.setTime(0, 230, 0);
+
+    }
+
+    @Test(expected = Exception.class)
+    public void testExceptionforSecond() {
+        MyTime czas = new MyTime();
+        czas.setTime(0, 0, 540);
+
+    }
 
 
     }

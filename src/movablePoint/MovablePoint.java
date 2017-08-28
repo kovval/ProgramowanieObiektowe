@@ -35,6 +35,25 @@ public class MovablePoint extends Point {
        _ySpeed = ySpeed;
     }
 
+    public float[] getSpeed(){
+         return new float[]{getXSpeed(),getYSpeed()};
+
+    }
+
+
+
+    public String toString(){
+        return String.format("(%f, %f), speed = (%f, %f)", getX(), getY(), getXSpeed(), getYSpeed());
+    }
+    public MovablePoint move(float x, float y){
+        x = getX();
+        y = getY();
+        x += getXSpeed();
+        y += getYSpeed();
+       return this;
+
+    }
+
 
 
 

@@ -8,6 +8,8 @@ import java.awt.geom.Area;
 public class Circle2 {
     private double _radius = 1.0;
     private String _color = "red";
+
+
     public Circle2(){}
     public Circle2(double radius){
         _radius = radius;
@@ -19,10 +21,13 @@ public class Circle2 {
     public double getRadius(){
         return _radius;
     }
-    public void setRadius(double radius){
+    public void setRadius(double radius) {
         _radius = radius;
-
     }
+    public String getColor(){
+        return _color;
+    }
+
     public double getArea(){
         return 3.14*Math.pow(_radius, 2d);
     }
@@ -33,3 +38,4 @@ public class Circle2 {
         return "Circle[radius= "+ _radius +"]";
     }
 }
+
