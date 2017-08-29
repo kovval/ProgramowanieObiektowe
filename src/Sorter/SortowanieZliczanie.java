@@ -10,15 +10,13 @@ public class SortowanieZliczanie implements ISort {
     public int[] sort(int[] tab) {
 
         for (int i = 0; i < tab.length; i++){
+            int max = 0;
+
+            int[] tabMax = new int[max];
             if(tab[i]>0){
-                for(int )
+//                for(int )
             }
         }
-
-
-
-
-
 
         return tab;
     }
