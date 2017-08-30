@@ -6,9 +6,6 @@ package Dekorator.Kawa;
 public abstract class Kawa {
     protected String opis;
 
-
-
-
     public String pobierzOpis(){
         return opis;
     }

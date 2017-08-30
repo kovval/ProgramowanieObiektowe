@@ -16,7 +16,7 @@ public class Main {
         MleczkoSojowe ms = new MleczkoSojowe(m);
         Czekolada czek2 = new Czekolada(ms);
         BitaSmietana bS = new BitaSmietana(czek2);
-        
+
 
 
         System.out.printf("Nazwa: %s :: Cena: %.2f", bS.pobierzOpis(), bS.koszt());
