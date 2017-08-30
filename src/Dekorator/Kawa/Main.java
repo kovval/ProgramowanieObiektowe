@@ -19,6 +19,7 @@ public class Main {
 
 
 
+
         System.out.printf("Nazwa: %s :: Cena: %.2f", bS.pobierzOpis(), bS.koszt());
     }
 }

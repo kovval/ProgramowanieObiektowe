@@ -14,4 +14,5 @@ public class Bohater {
 
     public String porbierzImie() { return imie;}
 
+
 }
