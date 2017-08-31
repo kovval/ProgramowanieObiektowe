@@ -1,13 +1,17 @@
-package Fasada.UbieranieNaPoryRoku;
+package Fasada.UbieranieNaPoryRoku.Ubrania;
 
 /**
  * Created by RENT on 2017-08-31.
  */
-public class spodnie {
-    public void wlozSpodnie(){
-        System.out.println("Wkładam spodnie");
+public class Spodnie implements IUbranie {
+
+    @Override
+    public void wlozUbranie() {
+        System.out.println("wkładam spodnie");
     }
-    public void zdejmijSpodnie(){
-        System.out.println("Zdejmuje Spodnie");
+
+    @Override
+    public void zdejmijUbranie() {
+        System.out.println("zdejmuje spodnie");
     }
 }
