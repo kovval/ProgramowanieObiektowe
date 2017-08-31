@@ -8,8 +8,12 @@ public class Main {
         Tarcza tarcza = new Tarcza();
 
 
-        System.out.printf("Nazwa tarczy: %s ::", pock.pobierzOpis());
 
+        AzbestowaTarcza ds = new AzbestowaTarcza();
+
+
+//        System.out.printf("Nazwa tarczy: %s ::", pock.pobierzOpis());
+        System.out.println();
 
 
 

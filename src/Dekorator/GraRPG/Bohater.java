@@ -5,14 +5,18 @@ package Dekorator.GraRPG;
  */
 public class Bohater {
 
-    protected  String imie;
-    protected  double tarcza;
-    protected double miecz;
-    protected double plecak;
+    private  String _imie;
+    private String _tarcza;
+
+ public Bohater(String imie, String tarcza){
+     _imie = imie;
+     _tarcza = tarcza;
+ }
+
     //azbestowa tarcza zapomnianych socjalistycznych ocieplen
     //
 
-    public String porbierzImie() { return imie;}
+
 
 
 }

@@ -5,4 +5,7 @@ package Dekorator.GraRPG;
  */
 public abstract class Plecak extends Bohater {
 
+    public Plecak(String imie, String tarcza) {
+        super(imie, tarcza);
+    }
 }

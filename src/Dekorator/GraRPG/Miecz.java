@@ -5,4 +5,7 @@ package Dekorator.GraRPG;
  */
 public abstract class Miecz extends Bohater {
 
+    public Miecz(String imie, String tarcza) {
+        super(imie, tarcza);
+    }
 }

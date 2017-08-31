@@ -5,4 +5,8 @@ package Dekorator.GraRPG;
  */
 public class Imie extends Bohater {
 
+
+    public Imie(String imie, String tarcza) {
+        super(imie, tarcza);
+    }
 }
