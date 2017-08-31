@@ -8,10 +8,20 @@ public class Bohater {
     private  String _imie;
     private String _tarcza;
 
- public Bohater(String imie, String tarcza){
+    public String getImie() {
+        return _imie;
+    }
+
+    public String getTarcza() {
+        return _tarcza;
+    }
+
+    public Bohater(String imie, String tarcza){
      _imie = imie;
      _tarcza = tarcza;
  }
+
+
 
     //azbestowa tarcza zapomnianych socjalistycznych ocieplen
     //
