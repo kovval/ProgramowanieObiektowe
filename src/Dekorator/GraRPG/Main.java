@@ -4,17 +4,25 @@ public class Main {
 
     public static void main(String[] args) {
 
-       AzbestowaTarcza at = new AzbestowaTarcza();
-       PlytkiOCB pock = new PlytkiOCB(at);
-        Tarcza tarcza = new Tarcza();
-        Bohater bohater = new Bohater("Jan", pock.pobierzOpis() );
+
+     //Tarcza
+       MadagaskarskaTArczaZKosciLEmorow mad = new MadagaskarskaTArczaZKosciLEmorow();
+       PlytkiOCB asd = new PlytkiOCB(mad);
+       ObsydianowaKupaLemura okl = new ObsydianowaKupaLemura(asd);
+
+       //Miecz
+       PraslowianskiMieczPierwszychPiastow pmp = new PraslowianskiMieczPierwszychPiastow();
 
 
-        AzbestowaTarcza ds = new AzbestowaTarcza();
+       Bohater bohater = new Bohater("Jan", okl.pobierzOpis(), pmp.pobierzOpis(), pmp.atak() );
+
+
+
 
 
 //        System.out.printf("Nazwa tarczy: %s ::", pock.pobierzOpis());
-        System.out.println(bohater.getImie()+ " " + bohater.getTarcza());
+        System.out.println("Bohater:" +  bohater.getImie()+ " Wyposażony w " + bohater.getTarcza()+ "dzierżączy " + bohater.getAtak());
+//        System.out.println("Statytyki: Obrona: " + bohater.getAtak());
 
 
 

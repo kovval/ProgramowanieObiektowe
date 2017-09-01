@@ -7,7 +7,7 @@ public class DodatkiDekorator extends Bohater
 {
 
 
-    public DodatkiDekorator(String imie, String tarcza) {
-        super(imie, tarcza);
+    public DodatkiDekorator(String imie, String tarcza, String miecz, double atak) {
+        super(imie, tarcza, miecz, atak);
     }
 }

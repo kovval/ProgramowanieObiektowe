@@ -16,4 +16,5 @@ public final class Sorter {
         return _sortowanie.sort(toSort);
     }
 
+
 }

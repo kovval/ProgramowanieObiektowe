@@ -6,7 +6,7 @@ package Dekorator.GraRPG;
 public class Imie extends Bohater {
 
 
-    public Imie(String imie, String tarcza) {
-        super(imie, tarcza);
+    public Imie(String imie, String tarcza, String miecz, double atak) {
+        super(imie, tarcza, miecz, atak);
     }
 }
