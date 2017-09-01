@@ -1,6 +1,6 @@
 package Dekorator.GraRPG;
 
-public abstract class MieczDekorator extends Miecz{
+public abstract class PlecakDekorator extends Plecak {
     public abstract String pobierzOpis();
 
 

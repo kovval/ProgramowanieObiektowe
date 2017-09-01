@@ -11,8 +11,8 @@ public class PlytkiOCB extends TarczaDekorator {
         return _tarcza.pobierzOpis() + " okryta płytkami OCB";
     }
 
-    @Override
+
     public double obrona() {
-        return 0;
+        return _tarcza.obrona() + 15.0;
     }
 }

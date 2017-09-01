@@ -9,7 +9,7 @@ public class Bezkofeinowa extends Kawa {
         super.opis = "bezkofeinowa";
     }
 
-    @Override
+
     public double koszt() {
         return 1.05;
     }

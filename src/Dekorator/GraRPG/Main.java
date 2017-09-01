@@ -6,25 +6,27 @@ public class Main {
 
 
      //Tarcza
-       MadagaskarskaTArczaZKosciLEmorow mad = new MadagaskarskaTArczaZKosciLEmorow();
+       MadagaskarskaTarczaZKosciLEmorow mad = new MadagaskarskaTarczaZKosciLEmorow();
        PlytkiOCB asd = new PlytkiOCB(mad);
        ObsydianowaKupaLemura okl = new ObsydianowaKupaLemura(asd);
+       BlachaWarszawskichTaksowek bW = new BlachaWarszawskichTaksowek(okl);
 
        //Miecz
        PraslowianskiMieczPierwszychPiastow pmp = new PraslowianskiMieczPierwszychPiastow();
+       dumaPolskichDresiarzy dP = new dumaPolskichDresiarzy(pmp);
 
+       //Plecak
+        ZoladekElefanta ze = new ZoladekElefanta();
+       Bohater bohater = new Bohater("JanKi sprawiedliwy i elekwentny", bW.pobierzOpis(), dP.pobierzOpis(), ze.pobierzOpisz(), bW.obrona(), dP.atak(), ze.ladunek() );
 
-       Bohater bohater = new Bohater("Jan", okl.pobierzOpis(), pmp.pobierzOpis(), pmp.atak() );
-
-
-
-
-
-//        System.out.printf("Nazwa tarczy: %s ::", pock.pobierzOpis());
-        System.out.println("Bohater:" +  bohater.getImie()+ " Wyposażony w " + bohater.getTarcza()+ "dzierżączy " + bohater.getAtak());
-//        System.out.println("Statytyki: Obrona: " + bohater.getAtak());
-
-
+        System.out.printf("Bohater: %s\n" +
+                "wyposażony w: %s\n" +
+                "dzierżący %s\n" +
+                "noszący: %s" +
+                "\n===============================================================================\n" +
+                "Statystyki: Obrona: %.2f, atak: %.1f, plecak: %.2f",
+                bohater.getImie(), bohater.getTarczaOpis(), bohater.getMiecz(), bohater.getPlecakOpis(),
+                bohater.getTarcza(), bohater.getAtak(), bohater.getPlecak());
 
 
     }

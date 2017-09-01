@@ -6,9 +6,13 @@ package Dekorator.GraRPG;
 public class Bohater {
 
     private  String _imie;
-    private String _tarcza;
+    private String _tarczaOpis;
     private String _miecz;
+    private String _plecakOpis;
+
+    private double _tarcza;
     private double _atak;
+    private double _plecak;
 
 
 
@@ -16,21 +20,41 @@ public class Bohater {
         return _imie;
     }
 
-    public String getTarcza() {
-        return _tarcza;
+
+    public String getTarczaOpis() {
+        return _tarczaOpis;
     }
 
-    public String getMiecz(){ return  _miecz;}
+    public String getMiecz() {
+        return _miecz;
+    }
 
-    public double getAtak(){ return  _atak;}
+    public String getPlecakOpis() {
+        return _plecakOpis;
+    }
+
+    public double getTarcza() {
+        return _tarcza;
+    }
+    public double getAtak() {
+        return _atak;
+    }
+    public double getPlecak() {
+        return _plecak;
+    }
 
 
 
-    public Bohater(String imie, String tarcza, String miecz, double atak){
+    public Bohater(String imie, String tarcza, String miecz, String plecakOpis, double tar, double ata, double plecak){
      _imie = imie;
-     _tarcza = tarcza;
+     _tarczaOpis = tarcza;
      _miecz = miecz;
-     _atak = atak;
+     _tarcza = tar;
+     _atak = ata;
+     _plecakOpis = plecakOpis;
+     _plecak = plecak;
+
+
  }
 
 

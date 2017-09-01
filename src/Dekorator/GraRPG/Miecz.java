@@ -11,5 +11,8 @@ public abstract class Miecz {
         return opis;
     }
 
+
     public abstract double atak();
+
+
 }

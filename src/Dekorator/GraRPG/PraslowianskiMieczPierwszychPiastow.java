@@ -1,14 +1,15 @@
 package Dekorator.GraRPG;
 
 public class PraslowianskiMieczPierwszychPiastow extends Miecz {
-    private Miecz _miecz;
 
     public PraslowianskiMieczPierwszychPiastow() {
-        super.opis = "Praslowianski Miecz Prasłowianskich Piastow";
+        super.opis = "Prasłowianski Miecz pradawnych Piastow";
     }
 
     @Override
     public double atak() {
-        return _miecz.atak() + 300;
+        return 100.00;
     }
+
+
 }

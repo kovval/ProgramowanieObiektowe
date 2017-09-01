@@ -1,6 +1,6 @@
 package Dekorator.GraRPG;
 
-public class ObsydianowaKupaLemura extends TarczaDekorator{
+public class ObsydianowaKupaLemura extends TarczaDekorator {
 
 
     private Tarcza _tarcza;
@@ -17,6 +17,6 @@ public class ObsydianowaKupaLemura extends TarczaDekorator{
 
     @Override
     public double obrona() {
-        return 0;
+        return _tarcza.obrona() + 15;
     }
 }
