@@ -1,7 +1,6 @@
 package Strategia.Sorter;
 
 
-import static Strategia.Sorter.Sorter.swap;
 
 /**
  * Created by RENT on 2017-08-28.
@@ -39,6 +38,12 @@ public class SortowaniePrzezKopcowanie implements ISort {
             swap(array, maxIndex, rodziceIndeks);
             SortowaniePrzezKopcowanie.MaxKopca(array, wielkoscKopca, maxIndex);
         }
+    }
+
+    private void swap(int[]arr, int index1, int index2){
+        int temp = arr[index1];
+        arr[index1] = arr[index2];
+        arr[index2] = temp;
     }
 
 }

@@ -5,6 +5,6 @@ package WzorceZadania.ZAD4.Fasada;
  */
 public class toNum303419 {
     public void dodaj(){
-        System.out.println("dodaj 303419");
+        System.out.println("dodaj C17H21NO4");
     }
 }

@@ -1,6 +1,6 @@
 package Strategia.Sorter;
 
-import static Strategia.Sorter.Sorter.getMax;
+
 
 /**
  * Created by RENT on 2017-08-28.
@@ -27,5 +27,13 @@ public class SortowaniePrzezZliczanie implements ISort {
     }
         return tabFinal;
     }
-
+    private int getMax(int[] tab){
+        int max = 0;
+        for(int i = 0; i<tab.length;i++){
+            if(max < tab[i]){
+                max = tab[i];
+            }
+        }
+        return max;
+    }
 }
