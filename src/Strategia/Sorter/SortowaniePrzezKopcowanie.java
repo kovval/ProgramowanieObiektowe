@@ -1,7 +1,7 @@
 package Strategia.Sorter;
 
 
-import static Strategia.Sorter.SortUtils.swap;
+import static Strategia.Sorter.Sorter.swap;
 
 /**
  * Created by RENT on 2017-08-28.

@@ -1,11 +1,11 @@
 package Strategia.Sorter;
 
-
-import static Strategia.Sorter.SortUtils.getMax;
+import static Strategia.Sorter.Sorter.getMax;
 
 /**
  * Created by RENT on 2017-08-28.
  */
+
 public class SortowaniePrzezZliczanie implements ISort {
 
     @Override
