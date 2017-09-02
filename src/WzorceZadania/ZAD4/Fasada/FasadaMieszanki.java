@@ -15,15 +15,15 @@ public class FasadaMieszanki {
     }
 
 
-    public void zrobMieszanke(){
+    public void zrobMieszanke() {
         _cukierpuder.dodaj();
-        _cukierpuder.dodaj();
+        _talk.dodaj();
         _to303.dodaj();
         _cukierpuder.dodaj();
         _talk.dodaj();
     }
 
-    public void zrobCapsa(){
+    public void zrobCapsa() {
         _talk.dodaj();
         _to303.dodaj();
         _talk.dodaj();

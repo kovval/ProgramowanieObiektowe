@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>WzorceZadania.ZAD3.Adapter</OriginalElement>
+  <nodes>
+    <node x="329.0" y="124.0">WzorceZadania.ZAD3.Adapter.Tasimo</node>
+    <node x="0.0" y="101.0">WzorceZadania.ZAD3.Adapter.DolceGustoToTasimoADAPTER</node>
+    <node x="204.5" y="0.0">WzorceZadania.ZAD3.Adapter.ITasimo</node>
+    <node x="0.0" y="344.0">WzorceZadania.ZAD3.Adapter.DolceGusto</node>
+    <node x="0.0" y="243.0">WzorceZadania.ZAD3.Adapter.IDolceGusto</node>
+    <node x="0.0" y="440.0">WzorceZadania.ZAD3.Adapter.Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="WzorceZadania.ZAD3.Adapter.DolceGusto" target="WzorceZadania.ZAD3.Adapter.IDolceGusto">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="WzorceZadania.ZAD3.Adapter.DolceGustoToTasimoADAPTER" target="WzorceZadania.ZAD3.Adapter.ITasimo">
+      <point x="0.0" y="-48.5" />
+      <point x="154.5" y="76.0" />
+      <point x="241.75" y="76.0" />
+      <point x="-37.25" y="25.5" />
+    </edge>
+    <edge source="WzorceZadania.ZAD3.Adapter.Tasimo" target="WzorceZadania.ZAD3.Adapter.ITasimo">
+      <point x="0.0" y="-25.5" />
+      <point x="403.5" y="76.0" />
+      <point x="316.25" y="76.0" />
+      <point x="37.25" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="160.0" y="288.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

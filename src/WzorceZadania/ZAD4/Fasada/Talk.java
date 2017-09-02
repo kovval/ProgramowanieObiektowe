@@ -6,6 +6,6 @@ package WzorceZadania.ZAD4.Fasada;
 public class Talk {
 
     public void dodaj(){
-        System.out.println("Dodaj porcje pudru");
+        System.out.print("Dodaj porcje pudru,  ");
     }
 }

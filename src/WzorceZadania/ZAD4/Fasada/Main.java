@@ -14,10 +14,11 @@ public class Main {
         while (pojemnoscPlecaka < 15 ){
             teodozja.zrobCapsa();
             Thread.sleep(1500);
+            System.out.println();
             teodozja.zrobMieszanke();
             pojemnoscPlecaka++;
         }
-        System.out.println("pora iść handlować");
+        System.out.println("\npora iść handlować");
 
     }
 }
