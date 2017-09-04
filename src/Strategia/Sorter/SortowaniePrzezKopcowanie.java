@@ -16,12 +16,15 @@ public class SortowaniePrzezKopcowanie implements ISort {
             SortowaniePrzezKopcowanie.MaxKopca(tab, liczbaElementow, i);
         }
         for(int i = tab.length -1; i > 0; i--) {
-           swap( tab, 0, i);
+            int temp = tab[0];
+            tab[0] = tab[i];
+            tab[i] = temp;
             SortowaniePrzezKopcowanie.MaxKopca(tab, --liczbaElementow,  0);
         }
 
         return tab;
     }
+
 
     private static void MaxKopca(int[] array, int wielkoscKopca, int rodziceIndeks ){
         int maxIndex = rodziceIndeks;
@@ -35,7 +38,11 @@ public class SortowaniePrzezKopcowanie implements ISort {
             maxIndex = rightChild;
         }
         if(maxIndex != rodziceIndeks){
-            swap(array, maxIndex, rodziceIndeks);
+
+            int temp = array[maxIndex];
+            array[maxIndex] = array[rodziceIndeks];
+            array[rodziceIndeks] = temp;
+
             SortowaniePrzezKopcowanie.MaxKopca(array, wielkoscKopca, maxIndex);
         }
     }

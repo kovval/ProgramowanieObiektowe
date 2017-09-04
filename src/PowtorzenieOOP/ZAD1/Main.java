@@ -1,4 +1,4 @@
-package Powtorzenie.ZAD1;
+package PowtorzenieOOP.ZAD1;
 
 
 

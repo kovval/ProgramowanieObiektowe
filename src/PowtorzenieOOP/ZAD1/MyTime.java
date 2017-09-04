@@ -1,4 +1,4 @@
-package Powtorzenie.ZAD1;
+package PowtorzenieOOP.ZAD1;
 
 /**
  * Created by RENT on 2017-08-25.
