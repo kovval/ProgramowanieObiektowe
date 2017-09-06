@@ -72,7 +72,7 @@ public class ATM {
         if (_cash == 0) return  String.format("ATM is empty");
         return ".";
     }
-    public toString
+
 
 
 }
