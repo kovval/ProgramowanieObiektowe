@@ -25,14 +25,10 @@ public class MapaZadaie {
 //        Scanner s = new Scanner(url.openStream());
 //        String text = s.toString();
 //        System.out.println(countChars(text));
-
 //        System.out.println(countWords(text));
         TreeMap<String, Integer> wordColumn = countWords(text);
         printSorted(wordColumn);
-
-
     }
-
     private static String readFile(String name) throws IOException {
         Scanner input = null;
         StringBuilder builder = new StringBuilder();
@@ -72,7 +68,6 @@ public class MapaZadaie {
             } else {
                 charsInText.put(czar, 1);
             }
-
         }
 
         return charsInText;
@@ -102,9 +97,8 @@ public class MapaZadaie {
         return wordsInText;
     }
     public static void printSorted(TreeMap<String, Integer> map) {
-        map.entrySet().stream()
-                .sorted((e1, e2) -> e2.getValue().compareTo(e1.getValue()))
-                .forEach(e -> System.out.printf("%s: %d\n", e.getKey(), e.getValue()));
+        map.entrySet().stream().sorted((W, K) -> K.getValue()
+                .compareTo(W.getValue())).forEach(e -> System.out.printf("%s: %d\n", e.getKey(), e.getValue()));
     }
 }
 
