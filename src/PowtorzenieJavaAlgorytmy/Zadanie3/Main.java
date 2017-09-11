@@ -32,7 +32,7 @@ public class Main  {
                 }
             }
         }
-        System.out.printf("Number of random numbers: %d, radio positive/negative %.3f, maxValue: %d, minValue %d ", amount, (double) positive / (double) negative, maxValue, minValue);
-        
+        System.out.printf("Number of random amounts: %d, radio positive/negative %.3f, maxValue: %d, minValue %d ", amount, (double) positive / (double) negative, maxValue, minValue);
+
     }
 }
