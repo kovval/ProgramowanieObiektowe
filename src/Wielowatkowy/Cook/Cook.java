@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class Cook {
 
-    private String[] denmark = {"appetizer", "soup" ,"entree", "dessert", "bill"};
+    private String[] menu = {"appetizer", "soup" ,"entree", "dessert", "bill"};
     public void prepereTheDish() throws InterruptedException {
         synchronized (Cook.this) {
             for (int i = 0; i < 5; i++) {
 
-                if(i == denmark.length-1)  System.out.printf("\nI issue the  %s", denmark[i]);
-                else System.out.printf("\nI cook %s", denmark[i]);
+                if(i == menu.length-1)  System.out.printf("\nI issue the  %s", menu[i]);
+                else System.out.printf("\nI cook %s", menu[i]);
                 wait();
-                if(i<denmark.length-1) System.out.println("Next Dinner!");
+                if(i< menu.length-1) System.out.println("Next Dinner!");
                 notify();
                 Thread.sleep(200);
             }
@@ -25,10 +25,10 @@ public class Cook {
         Thread.sleep(300);
         synchronized (Cook.this) {
             for (int i = 0; i < 5; i++) {
-                if(i == denmark.length-1) System.out.printf("\ni pay %s", denmark[i]);
-                else System.out.printf("\nEaiting for %s ", denmark[i]);
+                if(i == menu.length-1) System.out.printf("\ni pay %s", menu[i]);
+                else System.out.printf("\nEaiting for %s ", menu[i]);
                 sc.nextLine();
-                if(i == denmark.length-1) System.out.printf("\n It's time to go home!");
+                if(i == menu.length-1) System.out.printf("\n It's time to go home!");
                 else System.out.println("Eaten!");
                 notify();
                 wait();
