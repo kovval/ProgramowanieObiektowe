@@ -17,15 +17,14 @@ public class SortowaniePrzezZliczanie implements ISort {
         tabIndeks[liczba]++;
     }
     int sortowanaLiczba = 0;
-    int[] tabFinal = new int[tab.length];
     for(int indeks = 0; indeks < tabIndeks.length; indeks++){
         while(tabIndeks[indeks] > 0){
-            tabFinal[sortowanaLiczba] = indeks;
+            tab[sortowanaLiczba] = indeks;
             sortowanaLiczba++;
             tabIndeks[indeks]--;
         }
     }
-        return tabFinal;
+        return tab;
     }
     private int getMax(int[] tab){
         int max = 0;

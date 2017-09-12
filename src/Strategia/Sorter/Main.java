@@ -5,7 +5,7 @@ package Strategia.Sorter;
  */
 public class Main {
     public static void main(String[] args) {
-        Sorter sorter = new Sorter(new SortowaniePrzezKopcowanie());
+        Sorter sorter = new Sorter(new SortowaniePrzezZliczanie());
         int[] tabTosort = {9, 7, 8, 1, 5, 4, 2};
 
 //                {5, 3, 4, 2 ,3, 3 ,4,3, 5, 3, 19, 18, 9, 7, 6, 11, 13, 16, 63, 77, 16, 53, 12, 6, 5, 33, 28, 44, 49, 21, 20, 17, 38,
