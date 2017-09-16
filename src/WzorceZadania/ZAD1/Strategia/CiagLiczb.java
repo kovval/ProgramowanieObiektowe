@@ -3,7 +3,7 @@ package WzorceZadania.ZAD1.Strategia;
 /**
  * Created by RENT on 2017-09-01.
  */
-public final class CiagLiczb {
+public  final class CiagLiczb {
     private ICiagLiczb _ciag;
 
     public CiagLiczb(ICiagLiczb ciag) {

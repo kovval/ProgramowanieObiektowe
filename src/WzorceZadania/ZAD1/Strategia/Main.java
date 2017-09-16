@@ -12,10 +12,10 @@ public class Main {
         for(int i = ciagZliczony.length-1; i >= 0; i--){
             System.out.print(ciagZliczony[i] + " ");
         }
-        System.out.println();
-        for(int element : ciagZliczony){
-            System.out.print(element+" ");
-        }
+//        System.out.println();
+//        for(int element : ciagZliczony){
+//            System.out.print(element+" ");
+//        }
 
     }
 }
