@@ -10,6 +10,7 @@ public class KonBonifacy {
     public KonBonifacy(IPobierzTablice oblicz) {
         this.oblicz = oblicz;
     }
+
     public int[] uruchom(int[] tab) {
         return oblicz.pobierz(tab);
     }
