@@ -15,7 +15,6 @@ public class YTChannel implements ISubject {
         notifyObservers();
     }
 
-
     @Override
     public void register(IObserver o) {
         observerList.add(o);

@@ -8,7 +8,6 @@ public class YTUser implements IObserver {
         this.name = name;
         videosToWatch = 0;
     }
-
     @Override
     public void update() {
         videosToWatch++;
