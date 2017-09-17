@@ -1,0 +1,6 @@
+package ENUM.TasowanieTalli;
+
+
+    public enum Figury {AS, DWOJKA, TROJKA, CZWORKA, PIATKA, SZOSTKA,
+        SIODEMKA, OSEMKA, DZIEWIATKA, DZIESIATKA,WALET, DAMA, KROL}
+
