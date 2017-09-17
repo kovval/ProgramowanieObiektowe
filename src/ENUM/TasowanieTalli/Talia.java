@@ -22,19 +22,19 @@ public class Talia {
     }
 
     public void drukujTalie(){
-        for (Karta karta : talia) {
-            if ( talia.indexOf(karta) % 5 == 0){
-                System.out.println();
-            }
-            System.out.print(karta.toString());
-        }
-
-//        for (int i = 0; i < talia.size(); i++) {
-//            if ( i % 8 == 0){
+//        for (Karta karta : talia) {
+//            if ( talia.indexOf(karta) % 5 == 0){
 //                System.out.println();
 //            }
-//            System.out.printf("%s", );
+//            System.out.print(karta.toString());
 //        }
+
+        for (int i = 0; i < talia.size(); i++) {
+            if ( i % 8 == 0){
+                System.out.println();
+            }
+            System.out.printf("%s", talia.get(i).toString() );
+        }
 
 
     }
