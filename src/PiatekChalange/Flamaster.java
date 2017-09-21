@@ -8,9 +8,7 @@ public class Flamaster {
     public static void main(String[] args) {
 
         for (String s : word) {
-
             char[] chars = s.toCharArray();
-
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < chars.length; i++) {
 
