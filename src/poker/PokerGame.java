@@ -1,9 +1,6 @@
 package poker;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class PokerGame
 {
@@ -156,7 +153,8 @@ public class PokerGame
                 if(Names.contains(name))
                 {
                     Integer index=Names.indexOf(name);
-                    System.out.println(player.get(index).getCards());
+                    System.out.println(Arrays.toString(player.get(index).getCards()));
+
                     Boolean notfinished=true;
                     while(notfinished==true)
                     {
