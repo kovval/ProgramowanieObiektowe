@@ -14,7 +14,7 @@ public class Cook {
                 wait();
                 if(i< demnark.length-1) System.out.println("Next Dinner!");
                 notify();
-                Thread.sleep(200);
+                Thread.sleep(20);
             }
             System.out.print("\n Now is time to try by programer and catch better work");
         }
@@ -22,12 +22,12 @@ public class Cook {
 
     public void eatThedish() throws InterruptedException {
         Scanner sc = new Scanner(System.in);
-        Thread.sleep(300);
+        Thread.sleep(5000);
         synchronized (Cook.this) {
             for (int i = 0; i < 5; i++) {
                 if(i == demnark.length-1) System.out.printf("\ni pay %s", demnark[i]);
-                else System.out.printf("\nEaiting for %s ", demnark[i]);
-                sc.nextLine();
+                else System.out.printf("\nEaiting %s ", demnark[i]);
+                Thread.sleep(5000);
                 if(i == demnark.length-1) System.out.printf("\n It's time to go home!");
                 else System.out.println("Eaten!");
                 notify();
