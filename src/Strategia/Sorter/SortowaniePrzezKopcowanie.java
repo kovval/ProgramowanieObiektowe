@@ -25,7 +25,6 @@ public class SortowaniePrzezKopcowanie implements ISort {
         return tab;
     }
 
-
     private static void MaxKopca(int[] array, int wielkoscKopca, int rodziceIndeks ){
         int maxIndex = rodziceIndeks;
         int leftChild = rodziceIndeks* 2 + 1;
