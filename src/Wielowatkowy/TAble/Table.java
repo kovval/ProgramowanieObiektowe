@@ -17,6 +17,16 @@ public class Table implements Runnable {
         this.threadNumber = threadNumber;
     }
 
+    public int[] prepare(int threads) {
+
+        int z = (int) Math.ceil((double) array.length / threads);
+        int[] threadsIdxs = new int[threads + 1];
+        for (int i = 0; i < threads + 1; i++) {
+            threadsIdxs[i] = z * (i);
+        }
+        return threadsIdxs;
+    }
+
     public void serchForMaxInFragment() {
         int max = Integer.MIN_VALUE;
         for (int i = idxForThread[threadNumber - 1]; i < idxForThread[threadNumber]; i++) {
@@ -27,15 +37,6 @@ public class Table implements Runnable {
         maxForThreads.add(max);
     }
 
-    public int[] prepare(int threads) {
-
-        int z = (int) Math.ceil((double) array.length / threads);
-        int[] threadsIdxs = new int[threads + 1];
-        for (int i = 0; i < threads + 1; i++) {
-            threadsIdxs[i] = z * (i);
-        }
-        return threadsIdxs;
-    }
 
     @Override
     public void run() {

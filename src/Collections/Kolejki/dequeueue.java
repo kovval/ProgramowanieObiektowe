@@ -29,13 +29,13 @@ public class dequeueue {
        }
 
 
-
-        ArrayDeque<String> kolejka = new ArrayDeque<String>();
-        kolejka.add("Daria");
-        kolejka.add("Stefania");
-        kolejka.add("Syzyf");
-        kolejka.add("Małgorzata");
-        kolejka.add("Weronika");
+//
+//        ArrayDeque<String> kolejka = new ArrayDeque<String>();
+//        kolejka.add("Daria");
+//        kolejka.add("Stefania");
+//        kolejka.add("Syzyf");
+//        kolejka.add("Małgorzata");
+//        kolejka.add("Weronika");
 
 //        int number = kolejka.size();
 //        for(int i = 0; i < number; i++){

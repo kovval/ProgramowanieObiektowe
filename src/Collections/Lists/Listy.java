@@ -18,26 +18,26 @@ public class Listy {
             tablica[i] = rand.nextInt(10);
         }
 
-        for(int i = 0; i<tablicaInteger.length; i++){
-//            System.out.println(tablicaInteger[i]);
-        }
+//        for(int i = 0; i<tablicaInteger.length; i++){
+//            System.out.print(tablicaInteger[i]+" ");
+//        }
 
         List<Integer> list2 = Arrays.asList(tablicaInteger);
         List list1 = Arrays.asList(tablica);
 
 //        System.out.println(list1);
 
-        System.out.println(list2.hashCode());
+//        System.out.print(list2.hashCode());
 
-        ArrayList listInt = new ArrayList();
-        Collections.addAll(listInt, tablica);
-
-        System.out.println(listInt.hashCode());
-
+//        ArrayList listInt = new ArrayList();
+//        Collections.addAll(listInt, tablica);
+//
+//        System.out.println(listInt.hashCode());
+//
         ArrayList listInteger = new ArrayList();
         Collections.addAll(listInteger, tablicaInteger);
-        Collections.reverse(listInteger);
-
+//        Collections.reverse(listInteger);
+//
         System.out.println(listInteger.hashCode());
 
 
