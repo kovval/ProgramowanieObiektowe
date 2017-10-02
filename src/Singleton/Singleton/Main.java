@@ -5,6 +5,10 @@ package Singleton.Singleton;
  */
 public class Main {
     public static void main(String[] args) {
-//        Singleton sing = new Singleton();
+        Singleton sing = Singleton.getInstance();
+        sing.name = "Andrzej";
+
+
+        System.out.println(sing.name + " ");
     }
 }
