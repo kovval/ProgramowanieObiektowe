@@ -7,8 +7,9 @@ public class Main {
     public static void main(String[] args) {
         Singleton sing = Singleton.getInstance();
         sing.name = "Andrzej";
+        sing.time.setHour(13);
 
 
-        System.out.println(sing.name + " ");
+        System.out.println(sing.name +" "+ sing.time);
     }
 }
